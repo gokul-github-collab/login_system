@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty Detail</title>
+</head>
+<body>
+    <h2>Faculty Detail</h2>
+    <p>Name: {{ faculty.name }}</p>
+    <p>Department: {{ faculty.department }}</p>
+    <img src="{{ faculty.image.url }}" alt="{{ faculty.name }} Image">
+    <br>
+    <a href="{% url 'faculty_dashboard' %}">Back to Dashboard</a>
+</body>
+</html>
